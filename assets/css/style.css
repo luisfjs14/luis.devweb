@@ -1,0 +1,421 @@
+/*====================================
+    CONFIGURAÇÕES GLOBAIS E VARIÁVEIS
+====================================*/
+:root {
+    --primary: #007bff;
+    --secondary: #6610f2;
+    --light: #f8f9fc;
+    --dark: #333;
+    --footer: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--light);
+    color: var(--dark);
+    line-height: 1.6;
+}
+
+/*====================================
+    ESTILOS DO CABEÇALHO E MENU
+====================================*/
+header {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    color: #fff;
+    padding: 2.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+}
+
+header h1 {
+    font-size: 1.5rem;
+}
+
+header p {
+    margin-top: .5rem;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 200;
+    background: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 8%;
+}
+
+.menu-links {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.menu-links a {
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.menu-links a:hover,
+.menu-links a.active {
+    color: var(--primary);
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    color: var(--dark);
+    cursor: pointer;
+}
+
+/*====================================
+    SEÇÕES DE CONTEÚDO
+====================================*/
+section {
+    padding: 3rem 8%;
+}
+
+section h2 {
+    text-align: center;
+    color: var(--primary);
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+section h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--secondary);
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+/*====================================
+    GRID E CARDS DE SERVIÇOS
+====================================*/
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem;
+}
+
+.card {
+    background: #fff;
+    padding: 1.8rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .08);
+    transition: .5s;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(40px);
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .12);
+}
+
+.card h3 {
+    color: var(--secondary);
+    margin-bottom: .5rem;
+}
+
+.price {
+    font-weight: bold;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: .8rem 1.4rem;
+    background: var(--primary);
+    color: #fff;
+    font-weight: 500;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: var(--secondary);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .2);
+}
+
+.icon {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: .8rem;
+}
+
+/*====================================
+    SEÇÃO DE PAGAMENTOS
+====================================*/
+.payment-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.payment-card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, .08);
+    flex: 1;
+    min-width: 280px;
+    max-width: 400px;
+}
+
+.payment-card h3 {
+    color: var(--secondary);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--primary);
+    padding-bottom: 0.5rem;
+}
+
+.payment-card ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.payment-card ul li {
+    margin-bottom: 0.8rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/*====================================
+    RODAPÉ
+====================================*/
+.site-footer {
+    background-color: var(--footer);
+    color: #ddd;
+    padding: 3rem 8%;
+    font-size: 0.9rem;
+    border-top: 4px solid var(--secondary);
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    color: var(--primary);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.footer-section p {
+    line-height: 1.8;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section a:hover {
+    color: var(--light);
+}
+
+.social-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2rem;
+    margin-top: 1rem;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #444;
+}
+
+.btn-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-whatsapp i {
+    margin-right: 0.5rem;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+    transform: translateY(-2px);
+}
+
+/*====================================
+    MODAL
+====================================*/
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    animation: slide .3s ease;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
+}
+
+@keyframes slide {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--dark);
+}
+
+.modal-content h2 {
+    color: var(--primary);
+    margin-bottom: .5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    margin-top: 1rem;
+}
+
+input {
+    padding: .7rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 5px rgba(0, 123, 255, .3);
+}
+
+/*====================================
+    RESPONSIVIDADE
+====================================*/
+@media (max-width: 768px) {
+    .menu-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        flex-direction: column;
+        align-items: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s ease;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, .1);
+    }
+
+    .menu-links.show {
+        max-height: 300px;
+        padding: 1rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-section {
+        min-width: 100%;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .payment-card {
+        padding: 1.5rem;
+    }
+}

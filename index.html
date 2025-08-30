@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços Digitais Express</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⚙️</text></svg>">
+    
+</head>
+<body>
+    <header>
+        <h1>Serviços Digitais Express</h1>
+        <p>Transformo suas ideias em realidade online, com a agilidade que seu negócio precisa.</p>
+    </header>
+
+    <nav>
+        <div class="menu-container">
+            <div class="logo"><strong style="color:var(--secondary)">Meus Serviços</strong></div>
+            <div class="menu-toggle" onclick="toggleMenu()"><i class="fa-solid fa-bars"></i></div>
+            <div class="menu-links" id="menuLinks">
+                <a href="#landing">Landing Pages</a>
+                <a href="#sites">Sites</a>
+                <a href="#artes">Artes</a>
+                <a href="#videos">Vídeos</a>
+                <a href="#gmb">Google Meu Negócio</a>
+                <a href="#pagamento">Formas de Pagamento</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="landing">
+        <h2>📌 Landing Pages</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-file-lines icon"></i>
+                <h3>Básica</h3>
+                <p class="price">R$ 250,00</p>
+                <button class="btn" onclick="openModal('Landing Page Básica','Transforme visitantes em clientes com uma página de alta conversão. Ideal para eventos, promoções ou um produto específico, com um design limpo e intuitivo. Já inclui hospedagem e integração direta com WhatsApp ou formulário.', '250,00')">Contratar</button>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-layer-group icon"></i>
+                <h3>Profissional</h3>
+                <p class="price">R$ 400,00</p>
+                <button class="btn" onclick="openModal('Landing Page Profissional','Um passo à frente para o seu negócio! Apresente sua marca com um design personalizado, depoimentos de clientes satisfeitos e seções detalhadas sobre os seus benefícios. Domínio próprio e hospedagem inclusa para total profissionalismo.', '400,00')">Contratar</button>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chart-line icon"></i>
+                <h3>Avançada</h3>
+                <p class="price">R$ 650,00</p>
+                <button class="btn" onclick="openModal('Landing Page Avançada','Otimize sua estratégia digital com uma página poderosa. Integre-se a ferramentas de marketing, tenha um SEO básico para ser encontrado no Google e mostre seu trabalho com uma galeria de imagens e vídeos que impressionam.','650,00')">Contratar</button>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-bolt icon"></i>
+                <h3>Premium</h3>
+                <p class="price">R$ 990,00</p>
+                <button class="btn" onclick="openModal('Landing Page Premium','Acelere seus resultados com o máximo de performance. Desenvolvemos um funil de vendas estruturado, realizamos testes A/B para garantir a melhor conversão e enviamos relatórios de desempenho para que você acompanhe o sucesso em tempo real.', '990,00')">Contratar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sites">
+        <h2>🌐 Sites Institucionais</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-globe icon"></i>
+                <h3>Site Simples</h3>
+                <p class="price">R$ 750,00</p>
+                <button class="btn" onclick="openModal('Site Simples','Tenha sua presença online de forma rápida e eficiente. Uma página inicial, uma seção Sobre e informações de Contato para que seus clientes encontrem você facilmente. Layout 100% responsivo e hospedagem inclusa.', '750,00')">Contratar</button>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-building icon"></i>
+                <h3>Profissional</h3>
+                <p class="price">R$ 1.300,00</p>
+                <button class="btn" onclick="openModal('Site Profissional','Crie uma vitrine digital para a sua empresa. Com um design moderno e elegante, você terá um formulário de contato, integração com WhatsApp e um blog simples para gerar valor e engajamento com seu público.', '1.300,00')">Contratar</button>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-city icon"></i>
+                <h3>Empresarial</h3>
+                <p class="price">R$ 1.950,00</p>
+                <button class="btn" onclick="openModal('Site Empresarial','Eleve sua marca a um novo patamar com um site robusto e completo. Conecte-se com clientes através das redes sociais, mostre sua localização com Google Maps, e impressione com uma galeria de fotos e vídeos. Inclui SEO básico para uma melhor visibilidade.', '1.950,00')">Contratar</button>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-cart-shopping icon"></i>
+                <h3>Loja Virtual</h3>
+                <p class="price">R$ 2.800,00</p>
+                <button class="btn" onclick="openModal('Loja Virtual','Abra as portas do seu e-commerce e comece a vender online hoje mesmo! Cadastre produtos ilimitadamente, gerencie seu estoque com facilidade através de um painel de gestão intuitivo, e ofereça um checkout seguro para seus clientes.', '2.800,00')">Contratar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="artes">
+        <h2>🎨 Artes para Redes Sociais</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-image icon"></i>
+                <h3>Post Simples</h3>
+                <p class="price">R$ 25,00</p>
+                <button class="btn" onclick="openModal('Post Simples','Crie conteúdo que salta aos olhos! Uma arte estática personalizada para seu feed, desenvolvida com sua identidade visual e pronta para engajar sua audiência.', '25,00')">Contratar</button>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-clone icon"></i>
+                <h3>Pacote Mensal (12 artes)</h3>
+                <p class="price">R$ 290,00</p>
+                <button class="btn" onclick="openModal('Pacote 12 Artes','Conteúdo consistente é a chave para o sucesso. Receba 12 artes personalizadas por mês, com variedade de layouts para manter seu público sempre interessado e fortalecer sua presença nas redes.', '290,00')">Contratar</button>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-star icon"></i>
+                <h3>Pacote Premium (20 artes)</h3>
+                <p class="price">R$ 450,00</p>
+                <button class="btn" onclick="openModal('Pacote Premium 20 Artes','Domine suas redes sociais com um fluxo contínuo de conteúdo de alta qualidade. Este pacote inclui carrosséis informativos e artes promocionais estratégicas, tudo para maximizar seu alcance e conversão.', '450,00')">Contratar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>🎬 Edição de Vídeo</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-video icon"></i>
+                <h3>Reels/TikTok Curto</h3>
+                <p class="price">R$ 65,00</p>
+                <button class="btn" onclick="openModal('Reels/TikTok Curto','Vídeos curtos que prendem a atenção. Com edição dinâmica, legendas automáticas e cortes rápidos, seus Reels e TikToks estarão prontos para viralizar e atrair novos seguidores.', '65,00')">Contratar</button>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-film icon"></i>
+                <h3>Pacote Mensal (8 vídeos)</h3>
+                <p class="price">R$ 450,00</p>
+                <button class="btn" onclick="openModal('Pacote 8 Vídeos','Mantenha a constância na sua estratégia de vídeo. Receba 8 edições otimizadas para redes sociais por mês, com trilhas sonoras e efeitos simples que dão vida ao seu conteúdo.', '450,00')">Contratar</button>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-clapperboard icon"></i>
+                <h3>Vídeo Profissional</h3>
+                <p class="price">R$ 320,00</p>
+                <button class="btn" onclick="openModal('Vídeo Profissional','Destaque-se com uma edição de cinema. Perfeito para vídeos institucionais, apresentações ou depoimentos, com animações, transições e efeitos avançados que contam a sua história de forma inesquecível.', '320,00')">Contratar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="gmb">
+        <h2>📍 Google Meu Negócio</h2>
+        <div class="grid">
+            <div class="card">
+                <i class="fa-solid fa-map-location-dot icon"></i>
+                <h3>Configuração Completa</h3>
+                <p class="price">R$ 200,00</p>
+                <button class="btn" onclick="openModal('Google Meu Negócio - Configuração','Garanta que seus clientes encontrem seu negócio facilmente no Google Maps. Criamos e otimizamos seu perfil, cadastramos todas as informações essenciais, fotos e a localização exata para atrair mais tráfego local.', '200,00')">Contratar</button>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-chart-pie icon"></i>
+                <h3>Otimização Mensal</h3>
+                <p class="price">R$ 150,00/mês</p>
+                <button class="btn" onclick="openModal('Google Meu Negócio - Otimização Mensal','Mantenha seu perfil no topo! Com este plano, fazemos postagens semanais, atualizamos seus dados e enviamos relatórios detalhados para garantir que sua empresa continue visível e competitiva no Google.', '150,00/mês')">Contratar</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="pagamento">
+        <h2>💳 Formas de Pagamento</h2>
+        <div class="payment-container">
+            <div class="payment-card">
+                <h3>Planos de Pagamento</h3>
+                <p>Para projetos como <strong>Landing Pages</strong> e <strong>Sites</strong>, a forma de pagamento é dividida para sua comodidade e segurança:</p>
+                <ul>
+                    <li><strong>40% para iniciar o serviço:</strong> Confirmação e início do projeto.</li>
+                    <li><strong>30% na entrega da versão beta:</strong> Após a primeira aprovação do layout e estrutura.</li>
+                    <li><strong>30% no final do serviço:</strong> Após a entrega final e aprovação completa.</li>
+                </ul>
+            </div>
+            <div class="payment-card">
+                <h3>Pagamento à Vista ou Parcelado</h3>
+                <p>Em todos os serviços, você pode optar pelo pagamento completo através de:</p>
+                <ul>
+                    <li><strong>Cartão de Crédito:</strong> Parcelado em até 10x (com taxas da maquininha).</li>
+                    <li><strong>Link de Pagamento:</strong> Envio um link seguro para você pagar.</li>
+                    <li><strong>PIX ou Transferência:</strong> Desconto de 5% no pagamento completo à vista.</li>
+                </ul>
+            </div>
+            <div class="payment-card">
+                <h3>Serviços de Pagamento Integral</h3>
+                <p>Os serviços de entrega rápida, como <strong>Artes</strong>, <strong>Vídeos</strong> e <strong>Google Meu Negócio</strong>, exigem pagamento de <strong>100% para iniciar</strong> o projeto.</p>
+                <p>Isso garante agilidade e foco total na sua demanda, com a entrega em tempo recorde.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Minhas Informações</h3>
+                <p>
+                    Luís F. de J. Soares<br>
+                    Desenvolvedor Web | Designer Gráfico<br>
+                    E-mail: soares.lfj@outlook.com<br>
+                    Telefone: (34) 9 99203-8802
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Links Rápidos</h3>
+                <ul>
+                    <li><a href="#landing">Landing Pages</a></li>
+                    <li><a href="#sites">Sites</a></li>
+                    <li><a href="#artes">Artes</a></li>
+                    <li><a href="#videos">Vídeos</a></li>
+                    <li><a href="#gmb">Google Meu Negócio</a></li>
+                    <li><a href="#pagamento">Formas de Pagamento</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul class="social-links">
+                    <li><a href="https://wa.me/5534992038802" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://www.instagram.com/luis.devweb" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@luisfjsoares?is_from_webapp=1&sender_device=pc" target="_blank" title="TikTok"><i class="fab fa-tiktok"></i></a></li>
+                    <li><a href="https://github.com/luisfjs14" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://luisfjs14.github.io/luis" target="_blank"><i class="fas fa-link"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/luisfjsoares" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="mailto:soares.lfj@outlook.com" title="E-mail"><i class="fas fa-envelope"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="https://wa.me/5534992038802?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento." class="btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> Fale Comigo pelo WhatsApp
+            </a>
+            <p>&copy; 2025 Luís F. de J. Soares. Todos os direitos reservados.</p>
+            <br>
+            <p>Made by Luis F. de J. Soares</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2 id="modal-title"></h2>
+            <p id="modal-desc"></p>
+            <p><strong>Valor: </strong><span id="modal-price"></span></p>
+
+            <form id="contactForm">
+                <input type="text" id="nome" placeholder="Seu Nome" required>
+                <input type="email" id="email" placeholder="Seu E-mail" required>
+                <input type="tel" id="telefone" placeholder="Seu Telefone" required>
+                <button type="submit" class="btn">Enviar pelo WhatsApp</button>
+            </form>
+        </div>
+    </div>
+    
+    <script src="functions/js/script.js"></script>
+    
+</body>
+</html>
