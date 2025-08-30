@@ -4,8 +4,7 @@ Este é o código-fonte de um catálogo de serviços digitais, desenvolvido para
 
 O projeto foi criado com foco em performance, usabilidade e uma experiência de usuário (UX) intuitiva, sendo totalmente responsivo para funcionar em qualquer dispositivo.
 
-![Captura de tela do projeto em dispositivos](https://via.placeholder.com/1200x600.png?text=Preview+do+projeto+em+Desktop+e+Mobile)
-_Imagem de demonstração do catálogo (substitua por uma captura de tela real do seu projeto)._
+![Captura de tela do projeto em dispositivos](print.png)
 
 ---
 
@@ -56,7 +55,7 @@ Você pode clonar este repositório para inspecionar o código ou adaptá-lo par
 
 1.  **Clone o repositório:**
     ```bash
-    git clone [https://github.com/luisfjs14/seu-projeto.git](https://github.com/luisfjs14/seu-projeto.git)
+    git clone [https://github.com/luisfjs14/luis.devweb.git](https://github.com/luisfjs14/luis.devweb.git)
     ```
 2.  **Abra o arquivo `index.html`** no seu navegador para visualizar o catálogo.
 
