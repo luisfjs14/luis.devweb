@@ -4,7 +4,7 @@ Este é o código-fonte de um catálogo de serviços digitais, desenvolvido para
 
 O projeto foi criado com foco em performance, usabilidade e uma experiência de usuário (UX) intuitiva, sendo totalmente responsivo para funcionar em qualquer dispositivo.
 
-![Captura de tela do projeto em dispositivos](print.png)
+![Captura de tela do projeto em dispositivos](miniatura.png)
 
 ---
 
